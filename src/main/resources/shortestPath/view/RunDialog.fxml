@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="271.0" prefWidth="567.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="shortestPath.view.RunDialogController">
+   <children>
+      <GridPane layoutX="200.0" layoutY="147.0" prefHeight="190.0" prefWidth="580.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="285.3333740234375" minWidth="10.0" prefWidth="72.00003051757812" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="507.9999694824219" minWidth="10.0" prefWidth="507.9999694824219" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Result" GridPane.halignment="CENTER" />
+            <TextField fx:id="resultField" prefHeight="168.0" prefWidth="390.0" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="handleOk" layoutX="451.0" layoutY="321.0" mnemonicParsing="false" text="Ok" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>
